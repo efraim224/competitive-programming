@@ -17,4 +17,4 @@ def count_pos(n):
     print(possibilities[n -1])
 
 
-count_pos(4)
+count_pos(3)
