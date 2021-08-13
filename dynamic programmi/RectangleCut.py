@@ -8,6 +8,5 @@ def num_cuts(height, width):
 
 
 
-height = int(input())
-width = int(input())
+height, width = map(int, input().split())
 print(num_cuts(height,width))
