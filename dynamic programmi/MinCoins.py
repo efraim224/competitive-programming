@@ -6,6 +6,9 @@ def min_coins():
     value_str = input().split()
     coin_values = [int(x) for x in value_str]
     num_coins = [0]
+    if min(coin_values) > sum:
+         print(-1)
+         return
     for amount in range(1, sum + 1):
         res = math.inf
         for coin in coin_values:
