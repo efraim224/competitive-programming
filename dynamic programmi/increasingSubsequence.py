@@ -4,12 +4,12 @@ def increasing_sub(list, N):
     for i in range(1,N):
         current = 0
         for j in range(i,-1,-1):
-            if list[j] <= list[i]:
+            if list[j] < list[i]:
                 current = max(current, sub[j] + 1)
             else:
-                current = max(current,sub[j])
+                current = max(current,1)
         sub[i] = current
-    print(sub[N-1])
+    print(max(sub))
 
 
 length = int(input())
